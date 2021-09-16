@@ -1,0 +1,33 @@
+.bg-video{
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity: .4;
+    width: 100%;
+    height: 90vh;
+    z-index: -1;
+    
+    @include respond(tab-port){
+      height: 120vh;
+    }
+
+
+    &__content{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+    }
+    &__overlay{
+
+        position:absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $tertiary-light;
+        opacity: .5;
+        z-index: 2;
+    }
+
+}

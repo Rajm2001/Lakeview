@@ -1,0 +1,44 @@
+.header-primary{
+    color: $white;
+    margin-bottom: 2.5rem;
+    font-weight: 400;
+    &--main {
+        text-transform: uppercase;
+        letter-spacing: .2rem;
+        display: block;
+        font-size: 6.5rem;   
+    }
+
+    &--sub{
+        display: block;
+        font-family: 'Satisfy', cursive;
+        font-size: 2.6rem;
+    }
+}
+
+.heading-secondary{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 5rem;
+    background-image: linear-gradient(to right, $primary-light, $secondary-light);
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all 1s;
+    &:hover{
+        transform: skewX(15deg) skewY(2deg) scale(1.1);
+        text-shadow: .5rem 2rem 2rem rgba($color: #000000, $alpha: .6);
+    }
+
+}
+.heading-tertiary{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: $default-font-size;
+}
+.paragraph{
+    font-size: $default-font-size;
+    &:not(:last-child){
+        margin-bottom: 3rem;
+    }
+}
